@@ -1,0 +1,56 @@
+baseURL: "https://brendanmurrell.com/"
+languageCode: "en-us"
+title: "Brendan Murrell"
+theme: "PaperMod"
+
+paginate: 10
+
+params:
+  defaultTheme: "auto"
+  showReadingTime: true
+  showShareButtons: false
+  showBreadCrumbs: false
+  showPostNavLinks: true
+  showCodeCopyButtons: true
+  description: "Software Engineer | Options Pricing & Volatility Modeling | Low-Latency Systems"
+
+  homeInfoParams:
+    Title: "Brendan Murrell"
+    Content: >
+      Software engineer with experience building options pricing and volatility
+      calibration infrastructure. Currently exploring systematic vol trading
+      tools and applied ML for derivatives.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/brmurrell3"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/brendanamurrell/"
+
+  profileMode:
+    enabled: false
+
+menu:
+  main:
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai
+    lineNos: false
