@@ -1,7 +1,6 @@
 ---
 title: "Thinkorplace: Chip Macro Placement with Gradient Descent and Exact Local Search"
 date: 2026-11-06
-author: ["Brendan Murrell", "Xiaofei Zhang", "Andrew Murrell"]
 summary: "Ninth on the final leaderboard of the Partcl/Hudson River Trading Macro Placement Challenge 2026, with a verified mean proxy of 0.9974."
 tags: ["optimization", "eda", "placement", "python", "pytorch"]
 cover:
@@ -27,8 +26,7 @@ Runtime was 12 minutes per test case (max 60 minutes per test case).
 
 [Technical report (PDF)](thinkorplace-technical-report.pdf) ·
 [Source code](https://github.com/brmurrell3/macro-placer) ·
-[Placement explorer](placement-comparison.html) ·
-[Cite](https://github.com/brmurrell3/macro-placer/blob/main/CITATION.cff)
+[Placement explorer](placement-comparison.html)
 
 <!-- The chart is drawn for a white background, so it keeps a white card in dark mode; the link opens it full size for small screens. -->
 <a href="leaderboard-all.svg" style="display:block;box-shadow:none"><img src="leaderboard-all.svg" alt="Mean proxy cost of all 129 ranked entries on the final leaderboard, plotted by final rank, where lower is better. Thinkorplace is highlighted at rank 9 with 0.9974. Dashed lines mark the RePlAce baseline at 1.4578 and the simulated-annealing baseline at 2.1251. Filled dots are entries verified by the organizers and hollow dots are not verified. Ranks 128 and 129 are off scale at 3.60183 and 7.215." style="width:100%;padding:10px 12px;background:#fff;border-radius:var(--radius)"></a>
