@@ -1,13 +1,9 @@
 ---
 title: "Thinkorplace: Chip Macro Placement with Gradient Descent and Exact Local Search"
-date: 2026-11-06
-summary: "Ninth on the final leaderboard of the Partcl/Hudson River Trading Macro Placement Challenge 2026, with a verified mean proxy of 0.9974."
+weight: 1
 tags: ["optimization", "eda", "placement", "python", "pytorch"]
-cover:
-  image: "result-context.png"
-  alt: "Dot plot of the top ten entries on the final leaderboard by mean proxy cost over the 17 IBM designs, where lower is better: Archgen first at 0.9507, Carrotato second at 0.9522, and Thinkorplace, highlighted, ninth at 0.9974. A broken axis marks the published RePlAce baseline at 1.4578 and the simulated-annealing baseline at 2.1251."
-  relative: true
-  hiddenInSingle: true
+summary: "Ninth on the final leaderboard of the Partcl/Hudson River Trading Macro Placement Challenge 2026, with a verified mean proxy of 0.9974."
+aliases: ["/research/thinkorplace/"]
 ShowToc: false
 draft: false
 ---

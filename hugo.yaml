@@ -33,10 +33,6 @@ params:
 
 menu:
   main:
-    - identifier: research
-      name: Research
-      url: /research/
-      weight: 10
     - identifier: projects
       name: Projects
       url: /projects/
