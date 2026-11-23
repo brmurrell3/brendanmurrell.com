@@ -1,0 +1,14 @@
+{{- /*
+  LaTeX rendered to MathML when the site is built, by the KaTeX copy inside Hugo
+  (transform.ToMath, Hugo 0.132 or newer). Nothing is loaded when the page is viewed.
+    inline   {{< math >}}x_i{{< /math >}}
+    display  {{< math display >}}x_i = y{{< /math >}}
+  Invalid LaTeX stops the build and names the file and line.
+*/ -}}
+{{- $display := eq (.Get 0) "display" -}}
+{{- $out := transform.ToMath (.Inner | strings.TrimSpace) (dict "output" "mathml" "displayMode" $display) -}}
+{{- if $display -}}
+<div class="math-display" style="overflow-x:auto;overflow-y:hidden;margin:1rem 0;padding:0.25em 0">{{ $out }}</div>
+{{- else -}}
+{{ $out }}
+{{- end -}}
