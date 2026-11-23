@@ -1,6 +1,6 @@
 ---
 title: "Hive"
-date: 2026-03-01
+weight: 5
 tags: ["go", "llm", "agents", "nats"]
 summary: "Declarative framework for orchestrating LLM agent teams. One binary, no Docker, no Python dependencies."
 ---

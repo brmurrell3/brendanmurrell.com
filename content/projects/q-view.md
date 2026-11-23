@@ -1,6 +1,6 @@
 ---
 title: "Q-View"
-date: 2026-01-01
+weight: 3
 tags: ["go", "options", "volatility", "risk-neutral-density"]
 summary: "Extracts and visualizes risk-neutral probability densities from live option prices using Breeden-Litzenberger."
 ---

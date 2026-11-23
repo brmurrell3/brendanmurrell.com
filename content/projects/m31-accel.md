@@ -1,6 +1,6 @@
 ---
 title: "M31-ACCEL"
-date: 2026-02-01
+weight: 2
 tags: ["rust", "hardware", "zk", "verilog", "formal-verification"]
 summary: "Custom ASIC for modular arithmetic over GF(2^31 - 1), targeting ZK-STARK proof acceleration."
 ---
