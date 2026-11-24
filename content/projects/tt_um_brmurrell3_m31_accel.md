@@ -15,9 +15,8 @@ M31-ACCEL is a small ASIC that adds, subtracts and multiplies numbers modulo
 the Mersenne prime 2^31 - 1. That field is the base field of Plonky3 and other
 STARK provers. I designed the chip, checked the RTL formally, and wrote the
 software that drives it from a proof system. It was taped out on the Tiny
-Tapeout IHP 26a shuttle in IHP's 130 nm process. The silicon has not come back
-yet, so everything below is verified in simulation and by formal checks, not
-on hardware.
+Tapeout IHP 26a shuttle in IHP's 130 nm process. Everything below is verified
+in simulation and by formal checks.
 
 ## Why this field
 
