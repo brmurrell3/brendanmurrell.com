@@ -1,74 +1,42 @@
 # brendanmurrell.com
 
-Personal site built with Hugo + PaperMod, deployed via GitHub Pages.
+Source for [brendanmurrell.com](https://brendanmurrell.com). Built with [Hugo](https://gohugo.io) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, deployed to GitHub Pages.
 
-## Setup
+## Preview locally
 
-### 1. Install Hugo
-
-```bash
-# macOS
-brew install hugo
-
-# or download from https://gohugo.io/installation/
-```
-
-### 2. Add the PaperMod theme
+Requires Hugo 0.132 or newer. CI builds with 0.147.6 extended.
 
 ```bash
+git clone --recurse-submodules https://github.com/brmurrell3/brendanmurrell.com.git
 cd brendanmurrell.com
-git init
-git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+hugo server
 ```
 
-### 3. Update config
+The site is served at http://localhost:1313.
 
-Edit `hugo.yaml`:
-- Replace `YOURUSERNAME` in the GitHub and LinkedIn URLs with your actual usernames
-- Update the `baseURL` if using a different domain
-- Update `static/CNAME` if using a different domain
+## Layout
 
-### 4. Preview locally
+- `content/projects/`: one page per project. A project with images or other files is a folder with an `index.md` (see `macro-placer/`).
+- `layouts/shortcodes/math.html`: renders LaTeX to MathML at build time. Invalid LaTeX fails the build.
+- `static/`: files copied as is, including `CNAME` for the custom domain.
+- `hugo.yaml`: site config, menu, and home page text.
+- `themes/PaperMod/`: the theme, as a git submodule.
 
-```bash
-hugo server -D
-# Site available at http://localhost:1313
+## Add a project
+
+Create `content/projects/<slug>.md`:
+
+```yaml
+---
+title: "Project name"
+weight: 4
+tags: ["tag"]
+summary: "One sentence shown on the projects list."
+---
 ```
 
-### 5. Push to GitHub
+`weight` sets the order on the projects page, lowest first.
 
-```bash
-git add .
-git commit -m "Initial site scaffold"
-git remote add origin git@github.com:YOURUSERNAME/brendanmurrell.com.git
-git push -u origin main
-```
+## Deploy
 
-### 6. Enable GitHub Pages
-
-1. Go to repo Settings > Pages
-2. Under "Build and deployment", set Source to **GitHub Actions**
-3. The workflow will run automatically on push
-
-### 7. Configure DNS
-
-At your domain registrar, add these records:
-
-```
-Type  Name  Value
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-CNAME www   YOURUSERNAME.github.io
-```
-
-Then in repo Settings > Pages, add your custom domain and enable "Enforce HTTPS" once DNS propagates (can take up to 24h).
-
-## Writing research posts
-
-```bash
-hugo new research/your-post-slug.md
-```
-
-Edit the generated file in `content/research/`. Set `draft: false` when ready to publish.
+Pushing to `main` runs `.github/workflows/hugo.yml`, which builds the site and publishes it to GitHub Pages.
