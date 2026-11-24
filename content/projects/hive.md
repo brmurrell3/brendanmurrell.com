@@ -1,8 +1,8 @@
 ---
-title: "Hive"
+title: "hive"
 weight: 5
 tags: ["go", "llm", "agents", "nats"]
-summary: "Declarative framework for orchestrating LLM agent teams. One binary, no Docker, no Python dependencies."
+summary: "Declarative orchestration for LLM agent teams. Agents defined in YAML, connected over embedded NATS, shipped as one Go binary."
 ---
 
 **[GitHub](https://github.com/brmurrell3/hive)**

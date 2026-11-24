@@ -1,4 +1,4 @@
 ---
 title: "Projects"
-description: "Completed projects in volatility modeling, options pricing, and quantitative methods."
+description: "Write-ups of projects in GPU performance, hardware, and options pricing."
 ---

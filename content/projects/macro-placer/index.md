@@ -1,8 +1,9 @@
 ---
-title: "Thinkorplace: Chip Macro Placement with Gradient Descent and Exact Local Search"
+title: "macro-placer"
+description: "Thinkorplace: Chip Macro Placement with Gradient Descent and Exact Local Search"
 weight: 1
 tags: ["optimization", "eda", "placement", "python", "pytorch"]
-summary: "Ninth on the final leaderboard of the Partcl/Hudson River Trading Macro Placement Challenge 2026, with a verified mean proxy of 0.9974."
+summary: "GPU macro placer, ranked 9th in the Partcl/Hudson River Trading placement challenge"
 aliases: ["/research/thinkorplace/"]
 ShowToc: false
 draft: false
