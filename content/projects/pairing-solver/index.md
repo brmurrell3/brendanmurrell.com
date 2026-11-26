@@ -78,3 +78,14 @@ optimum and against a greedy pairing baseline:
 Times are from an Apple M3 Max. The
 [benchmark tables](https://github.com/brmurrell3/pairing-solver/blob/main/docs/benchmarks.md)
 have the full runs and the command that regenerates them.
+
+## How hard is it in general?
+
+Worst cases can be hard. Draft proofs in
+[docs/proofs.md](https://github.com/brmurrell3/pairing-solver/blob/main/docs/proofs.md#hardness-plan-phase-4),
+not yet independently reviewed, show that finding the lowest requirement is
+NP-hard once butterflies and condors count as spreads. They show it is also
+NP-hard for a single max-loss group, but only through strikes with many
+digits. A dynamic program over strikes solves that case in time polynomial in
+the contracts held and the strike range. The hard instances are constructed
+worst cases, not typical books.
