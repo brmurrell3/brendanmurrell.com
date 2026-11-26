@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#222">
+  <rect width="720" height="420" fill="#fff"/>
+
+  <!-- Top: two ways to pair the same four legs -->
+  <text x="20" y="28" font-weight="600">Two separate spreads</text>
+  <text x="700" y="28" text-anchor="end" font-weight="600">$500 + $500 = $1,000</text>
+  <path d="M173 70 V78 H267 V70" fill="none" stroke="#888"/>
+  <path d="M453 70 V78 H547 V70" fill="none" stroke="#888"/>
+  <text x="220" y="94" text-anchor="middle" fill="#555">put spread, $500</text>
+  <text x="500" y="94" text-anchor="middle" fill="#555">call spread, $500</text>
+
+  <text x="20" y="128" font-weight="600">One max-loss group</text>
+  <text x="700" y="128" text-anchor="end" font-weight="600" fill="#1769aa">$500</text>
+  <path d="M173 170 V178 H547 V170" fill="none" stroke="#1769aa"/>
+  <text x="360" y="194" text-anchor="middle" fill="#1769aa">only one side can lose at expiration</text>
+
+  <!-- Leg chips: long = blue, short = red -->
+  <g text-anchor="middle" font-size="12">
+    <g transform="translate(0,0)">
+      <rect x="146" y="44" width="54" height="24" rx="4" fill="#e3eef8" stroke="#1769aa"/><text x="173" y="60">+P 90</text>
+      <rect x="240" y="44" width="54" height="24" rx="4" fill="#fbe7e5" stroke="#c0392b"/><text x="267" y="60">−P 95</text>
+      <rect x="426" y="44" width="54" height="24" rx="4" fill="#fbe7e5" stroke="#c0392b"/><text x="453" y="60">−C 105</text>
+      <rect x="520" y="44" width="54" height="24" rx="4" fill="#e3eef8" stroke="#1769aa"/><text x="547" y="60">+C 110</text>
+    </g>
+    <g transform="translate(0,100)">
+      <rect x="146" y="44" width="54" height="24" rx="4" fill="#e3eef8" stroke="#1769aa"/><text x="173" y="60">+P 90</text>
+      <rect x="240" y="44" width="54" height="24" rx="4" fill="#fbe7e5" stroke="#c0392b"/><text x="267" y="60">−P 95</text>
+      <rect x="426" y="44" width="54" height="24" rx="4" fill="#fbe7e5" stroke="#c0392b"/><text x="453" y="60">−C 105</text>
+      <rect x="520" y="44" width="54" height="24" rx="4" fill="#e3eef8" stroke="#1769aa"/><text x="547" y="60">+C 110</text>
+    </g>
+  </g>
+
+  <!-- Bottom: payoff of the group at expiration -->
+  <line x1="20" y1="214" x2="700" y2="214" stroke="#ddd"/>
+  <text x="20" y="240" font-weight="600">Payoff of the four legs at expiration</text>
+
+  <line x1="80" y1="270" x2="640" y2="270" stroke="#999"/>
+  <text x="72" y="274" text-anchor="end" fill="#555">$0</text>
+  <line x1="80" y1="350" x2="640" y2="350" stroke="#c0392b" stroke-dasharray="4 4"/>
+  <text x="72" y="354" text-anchor="end" fill="#c0392b">−$500</text>
+  <text x="360" y="342" text-anchor="middle" fill="#c0392b">maximum loss = the requirement</text>
+
+  <polyline points="80,350 173,350 267,270 453,270 547,350 640,350" fill="none" stroke="#1769aa" stroke-width="2.5" stroke-linejoin="round"/>
+  <g fill="#1769aa">
+    <circle cx="173" cy="350" r="4.5"/>
+    <circle cx="267" cy="270" r="4.5"/>
+    <circle cx="453" cy="270" r="4.5"/>
+    <circle cx="547" cy="350" r="4.5"/>
+  </g>
+
+  <g text-anchor="middle" fill="#555" font-size="12">
+    <text x="173" y="372">90</text><text x="267" y="372">95</text><text x="360" y="372">100</text>
+    <text x="453" y="372">105</text><text x="547" y="372">110</text>
+  </g>
+  <text x="360" y="392" text-anchor="middle" fill="#555">underlying price</text>
+  <circle cx="26" cy="408" r="4" fill="#1769aa"/>
+  <text x="36" y="412" fill="#555" font-size="12">checked points: the payoff only bends at strikes, so its worst value is at one of them</text>
+</svg>

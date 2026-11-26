@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#222">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#666"/>
+    </marker>
+  </defs>
+  <rect width="720" height="290" fill="#fff"/>
+
+  <text x="10" y="24" font-weight="600">Load a book</text>
+  <text x="710" y="24" text-anchor="end" fill="#555">once per book</text>
+
+  <g text-anchor="middle">
+    <rect x="10" y="38" width="128" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="74" y="64">Positions</text><text x="74" y="82">and rule set</text>
+
+    <rect x="156" y="38" width="128" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="220" y="58">Model</text><text x="220" y="75" font-size="11" fill="#555">loss rows at strikes,</text><text x="220" y="90" font-size="11" fill="#555">pairing rows, templates</text>
+
+    <rect x="302" y="38" width="128" height="62" rx="6" fill="#e3eef8" stroke="#1769aa"/>
+    <text x="366" y="64">Dual simplex,</text><text x="366" y="82">branch-and-bound</text>
+
+    <rect x="448" y="38" width="128" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="512" y="64">Independent</text><text x="512" y="82">rule checker</text>
+
+    <rect x="594" y="38" width="116" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="652" y="64">Structures and</text><text x="652" y="82">requirement</text>
+  </g>
+  <g stroke="#666" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="138" y1="69" x2="154" y2="69"/>
+    <line x1="284" y1="69" x2="300" y2="69"/>
+    <line x1="430" y1="69" x2="446" y2="69"/>
+    <line x1="576" y1="69" x2="592" y2="69"/>
+  </g>
+
+  <line x1="10" y1="140" x2="710" y2="140" stroke="#ddd"/>
+  <text x="10" y="168" font-weight="600">Price an order</text>
+  <text x="710" y="168" text-anchor="end" fill="#555">before each order is routed</text>
+
+  <g text-anchor="middle">
+    <rect x="10" y="182" width="128" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="74" y="208">Order: resize,</text><text x="74" y="226">new series, close</text>
+
+    <rect x="156" y="182" width="128" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="220" y="208">Change bounds</text><text x="220" y="226" font-size="11" fill="#555">or rebuild the model</text>
+
+    <rect x="302" y="182" width="128" height="62" rx="6" fill="#e3eef8" stroke="#1769aa"/>
+    <text x="366" y="208">Re-solve from</text><text x="366" y="226">the saved basis</text>
+
+    <rect x="448" y="182" width="128" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="512" y="208">Independent</text><text x="512" y="226">rule checker</text>
+
+    <rect x="594" y="182" width="116" height="62" rx="6" fill="#f4f4f4" stroke="#999"/>
+    <text x="652" y="208">Requirement</text><text x="652" y="226">after the order</text>
+  </g>
+  <g stroke="#666" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="138" y1="213" x2="154" y2="213"/>
+    <line x1="284" y1="213" x2="300" y2="213"/>
+    <line x1="430" y1="213" x2="446" y2="213"/>
+    <line x1="576" y1="213" x2="592" y2="213"/>
+  </g>
+
+  <!-- The book keeps its solved state for orders -->
+  <line x1="366" y1="100" x2="366" y2="180" stroke="#1769aa" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <text x="374" y="136" fill="#1769aa" font-size="12">basis, factorization, pairing kept</text>
+  <text x="360" y="274" text-anchor="middle" fill="#555" font-size="12">Only the order's positions change, so most orders reuse the book's solve instead of starting over.</text>
+</svg>
