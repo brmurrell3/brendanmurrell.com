@@ -18,9 +18,9 @@ params:
   homeInfoParams:
     Title: "Brendan Murrell"
     Content: >
-      I build options pricing, volatility, and margin systems at Charles
-      Schwab. On my own time I work on hard problems outside finance, most
-      recently chip placement and ASIC design.
+      I work on options pricing, volatility modeling, and real time margin
+      systems. Outside work I solve optimization and hardware problems, most
+      recently GPU accelerated chip placement and ASIC design.
 
   socialIcons:
     - name: github
