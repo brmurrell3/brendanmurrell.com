@@ -3,7 +3,7 @@ title: "pairing-solver"
 description: "Finding the Lowest Strategy-Based Margin for an Options Book"
 weight: 6
 tags: ["optimization", "options", "margin", "cpp", "linear-programming"]
-summary: "C++20 solver that splits an options book into FINRA and Cboe margin structures at the lowest total requirement, in real time. Pairing with butterflies and condors is shown NP-hard, with the reductions machine-checked in Lean 4."
+summary: "Realtime C++20 solver that splits an options book into FINRA and Cboe margin structures at the lowest total requirement."
 ShowToc: false
 ---
 
