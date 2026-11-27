@@ -72,8 +72,10 @@ optimum and against a greedy pairing baseline:
 | Against greedy pairing, retail-like books | 5.6% lower requirement on average |
 | Against greedy pairing, market-maker books | 11.0% lower |
 | Against greedy pairing, adjusted deliverables | 16.5% lower |
-| Pricing one order on a 1,000-series book | 10 to 20 ms median, all 240 under 50 ms |
-| Loading a 1,000-series book | 0.42 s |
+| Pricing one order on a 1,000-series book | 2.6 to 7.3 ms median, all 240 under 12 ms |
+| Loading a 1,000-series book | 29 ms |
+| Pricing one order on a 5,000-series book | 25 to 53 ms median, p99 75 to 103 ms |
+| Loading a 5,000-series book | 2.0 s |
 
 Times are from an Apple M3 Max. The
 [benchmark tables](https://github.com/brmurrell3/pairing-solver/blob/main/docs/benchmarks.md)
