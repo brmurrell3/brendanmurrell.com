@@ -89,3 +89,8 @@ NP-hard for a single max-loss group, but only through strikes with many
 digits. A dynamic program over strikes solves that case in time polynomial in
 the contracts held and the strike range. The hard instances are constructed
 worst cases, not typical books.
+
+The reductions behind these results are also machine-checked in Lean 4
+([lean/README.md](https://github.com/brmurrell3/pairing-solver/blob/main/lean/README.md)).
+That confirms each proof follows from its definitions, not that the
+definitions match the rule text.
