@@ -8,7 +8,7 @@ pagination:
 
 params:
   defaultTheme: "auto"
-  showReadingTime: true
+  showReadingTime: false
   showShareButtons: false
   showBreadCrumbs: false
   showPostNavLinks: true

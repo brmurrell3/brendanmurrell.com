@@ -1,7 +1,7 @@
 ---
 title: "pairing-solver"
 description: "Finding the Lowest Strategy-Based Margin for an Options Book"
-weight: 6
+weight: 1
 tags: ["optimization", "options", "margin", "cpp", "linear-programming"]
 summary: "Realtime C++20 solver that splits an options book into FINRA and Cboe margin structures at the lowest total requirement."
 ShowToc: false

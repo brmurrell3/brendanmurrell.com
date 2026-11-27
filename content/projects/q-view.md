@@ -1,6 +1,6 @@
 ---
 title: "q-view"
-weight: 4
+weight: 5
 tags: ["go", "options", "volatility", "risk-neutral-density"]
 summary: "Desktop app that extracts risk-neutral probability densities from live option chains using Breeden-Litzenberger and SVI."
 ---

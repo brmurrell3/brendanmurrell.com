@@ -1,7 +1,7 @@
 ---
 title: "quant-lib"
 description: "Volatility Research Infrastructure: Pricing American Options in Batches on a GPU"
-weight: 3
+weight: 4
 tags: ["options", "volatility", "cuda", "cpp", "rust", "gpu"]
 summary: "CPU and GPU option pricing library in C++/CUDA. Black-Scholes, American finite differences, implied vol, SABR/SSVI calibration"
 aliases: ["/projects/vol-infra/"]

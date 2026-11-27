@@ -1,7 +1,7 @@
 ---
 title: "tt_um_brmurrell3_m31_accel"
 description: "Mersenne-31 Arithmetic Accelerator"
-weight: 2
+weight: 3
 tags: ["hardware", "verilog", "formal-verification", "rust", "zk"]
 summary: "Verilog RTL and formal verification for a Mersenne-31 modular arithmetic ASIC, taped out on Tiny Tapeout in IHP 130 nm."
 aliases: ["/projects/m31-accel/"]

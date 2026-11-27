@@ -1,6 +1,6 @@
 ---
 title: "hive"
-weight: 5
+weight: 6
 tags: ["go", "llm", "agents", "nats"]
 summary: "Declarative orchestration for LLM agent teams. Agents defined in YAML, connected over embedded NATS, shipped as one Go binary."
 ---
